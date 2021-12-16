@@ -5,7 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from routers import users, pokemon
 
-origins = ["*"] # This will eventually be changed to only the origins you will use once it's deployed, to secure the app a bit more.
+origins = ["https://chandan94.github.io"] # This will eventually be changed to only the origins you will use once it's deployed, to secure the app a bit more.
 
 middleware = [ Middleware(
         CORSMiddleware,
